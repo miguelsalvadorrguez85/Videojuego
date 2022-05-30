@@ -42,3 +42,7 @@ label{
     border-radius: 20px;
 }
 
+#do:hover{
+    background-color: green;
+    color: black;
+}
