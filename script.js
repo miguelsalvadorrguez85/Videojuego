@@ -13,7 +13,7 @@ button.onclick = function (){
     let order = splitString(sentence);
     let checked = verbs.has (order[0]);
     if ((!checked)){
-        console.log("Solo puedes utilizar los verbos coger, usar, ir, mirar, hablar")
+        description.innerHTML = ("Solo puedes utilizar los verbos coger, usar, ir, mirar, hablar");
     }
     
 }
