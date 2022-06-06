@@ -17,11 +17,11 @@ function splitString(orders){
 function verbsList(){
 
     const verbs = new Map();
-    verbs.set("coger");
-    verbs.set("usar");
-    verbs.set("ir");
-    verbs.set("mirar");
-    verbs.set("hablar");
+    verbs.set("coger",{do: takingItem()});
+    verbs.set("usar", {do: usingItem()});
+    verbs.set("ir", {do: goingDirection() });
+    verbs.set("mirar",{do: takingALook()});
+    verbs.set("hablar", {do: TalkingTo()});
     return verbs;
 }   
 
@@ -33,6 +33,24 @@ function executeCommands(){
     if ((!checked)){
         description.innerHTML = ("Solo puedes utilizar los verbos coger, usar, ir, mirar, hablar");
         console.log("hola");
+    }
+
+    switch(order[0]){
+        case "coger":
+        break;
+
+        case "usar":
+        break;
+        
+        case "ir":
+            
+        break;
+
+        case "mirar":
+        break;
+
+        case "hablar":
+        break;
     }
     
 }
@@ -61,7 +79,10 @@ function createMap(){
     Map[3][3]= {description:"Osario", exits:["N"]};
     return Map;
 
+
 }
+
+
 
 
 
